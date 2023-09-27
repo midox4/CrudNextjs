@@ -1,6 +1,4 @@
 
-// showing data from mongodb 
-
 import RemoveBtn from "./RemoveBtn";
 import Link from "next/link";
 import { HiPencilAlt } from "react-icons/hi";
@@ -32,11 +30,11 @@ const DataList = async () => {
         datas.map((t) => (
           <div
             key={t._id}
-            className="   container mx-auto px-5 p-4 border  border-slate-600 my-3 flex justify-between gap-5 items-start "
+            className="   text-justify container mx-auto px-4 p-4 border  border-slate-600 my-3 flex justify-between gap-5 items-end "
           >
             <div>
               <h2 className="font-bold text-2xl">{t.title} </h2>
-              <div  className=" w-full">{t.description}</div>
+              <div  >{t.description}</div>
             </div>
             <div className=" flex w-fit gap-2">
               <RemoveBtn id={t._id}  />
