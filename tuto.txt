@@ -1,0 +1,10 @@
+# npx create-next-app@latest . (in current directory)
+
+no ts
+yes eslint
+yes tailwindcss
+no src directory
+yes app router
+no alias customize
+
+npm i mongoose react-icons
